@@ -16,7 +16,7 @@
  - Git 2+
  - disk boyutu önemsiz
 
- # kurulum için 2 tane seçeneğimiz bulunuyor isterseniz kendi örneğinizi oluşturabilirsiniz örnek kurulum üzerinden devam edeceğim. [Burdan] diğer detaylarıda kontrol edebilirsiniz.
+ # kurulum için 2 tane seçeneğimiz bulunuyor isterseniz kendi örneğinizi oluşturabilirsiniz örnek kurulum üzerinden devam edeceğim. [Burdan](https://docs.minaprotocol.com/zkapps/how-to-write-a-zkapp) diğer detaylarıda kontrol edebilirsiniz.
 
 <h1 align="center">Örnek Kurulum
 
@@ -35,17 +35,17 @@
  ## Bu komut ile bize gerekli olan dependencies ları indiriyoruz:Bağımlılık (dependency) kurulumda ihtiyaç duyduğumuz dışarıdan eklediğimiz kaynaklar ya da bileşenlerdir.
 
  ```
-sudo apt install curl git build-essential \
+sudo apt install curl git build-essential
  ```
 
-  ## Bizden istenilen özelliklere uygun olarak node js kuruyoruz
+  ## Bizden istenilen özelliklere uygun olarak node kuruyoruz
    ```
 sudo apt-get install nodejs
  ```
 ```
 sudo apt install npm
 ```
- ## versiyonları kontrol ediyoruz çıktıda 16 üstü değilse yükseltme yapamazız gerekiyor örnek olara 10 ile başlıyorsa versiyon cıktısı yükseltme gerekiyor.
+ ## versiyonları kontrol ediyoruz çıktıda 16 üstü değilse yükseltme yapamamız gerekiyor örnek olara versiyon cıktısı 10 ile başlıyorsa 10. versiyon kurulu, bu yüzden yükseltme gerekiyor.
 ```
 nodejs -v
 ```
@@ -62,7 +62,7 @@ npm -v
    ```
 sudo apt-get install nodejs
 ```
-# Versiyonları tekrar kontrol edelim.
+# Versiyonları kontrol edelim. versiyon çıktısı node için 18 ile başlarsa sorun yok.
 
 ```
 node -v
@@ -72,54 +72,43 @@ node -v
 npm -v
 ```
 
-## Zkapp kurlumu:
+## Zkapp kurulumu:
   ```
   npm install -g zkapp-cli
   ```
+ ```
 zk example sudoku
-
+```
+```
+cd sudoku
+```
+```
 npm run test
-
-npm run testw
-
-npm run build
-
+```
+```
+ npm run build
+```
+```
+npm run start
+```
+ 
+ 
+```
 zk config
+```
+# 
+-Chose a name: berkeley 
+-Apı url: https://proxy.berkeley.minaexplorer.com/graphql
+-Transaction fee: 0.1
 
-https://proxy.berkeley.minaexplorer.com/graphql
+Çıktıda verilen linki alıp tarayıcımıza yapıştırıyoruz daha sonra Request diyip test tokenleri alıyoruz. yeni bloğun oluşmasını bekliyoruz videodan görebilirsiniz.
 
- ## Temel gereksinimler sunucu güncelleme
+##Yeni Blok oluştuktan sonra 
 
+```
+zk deploy berkeley
+ 
   ```
- sudo apt update && sudo apt upgrade -y
-  ```
 
- ## Sonrasında aşağıdaki komutları sırasıyla giriyoruz.
-
- ```
-sudo apt install git pkg-config build-essential libssl-dev curl jq
- ```
- ```
-curl https://sh.rustup.rs -sSf | sh -s -- -y
- ```
- ```
-source $HOME/.cargo/env
- ```
- ```
-git clone https://github.com/Manta-Network/manta-rs.git
- ```
-
- ```
-cd manta-rs
- ``` 
- ```
-cargo run --release --package manta-trusted-setup --all-features --bin groth16_phase2_client register
- ```  
-  
-## Şimdi kayıt işlemlerini yapıyoruz Buraya twitter kullanıcı adımızı yazıyoruz başında "@" işareti koymadan giriyoruz. Sonrasında mail adresimizi giriyoruz videodan takip edebilirsiniz. burda size verdiği bilgileri not almayı unutmayın formda kullanacağız ve saklayın.
-
-## Kayıt formunu doldurmayı unutmayalım. [Buradan](https://mantanetwork.typeform.com/TrustedSetup) kayıt formuna ulaşabilirsiniz. ayrıca [Discord](https://discord.gg/mantanetwork) Sunucularından katılmayı unutmayın.
-
-  ## Eğer polkadot cüzdanını kullanmayı bilmiyorsanız videodan takip edin formda sizden  KMA adresinizi vermenizi isteyecek, bunun için polkadotjs cüzdana sahip olmanız gerekiyor.
  
 
