@@ -1,8 +1,8 @@
 <h1 align="center">Mina Protocol Berkley Testnet (ZKapp oluşturma)
 
-## Mina Protocol, Layer-1 blok zincirleri arasında “minimal” blok zinciri olarak tanımlanan ve bilinen en hafif blok zinciri olma ünvanına sahiptir. Ölçeklendirme adına gelecekte çok fazla konuşulacak bir proje (boyut sadece 22kb). Bu Test işlemlerinin herhangi bir getirisi yok sadece eğitim amaçlı öğrenmek isteyenler için anlatıyorum ilerleyen zamanlarda ödüllü testneti gelecek, yayınlanınca sizlerle paylaşacağız.
+## Mina Protocol, Layer-1 blok zincirleri arasında “minimal” blok zinciri olarak tanımlanan ve bilinen en hafif blok zinciri olma ünvanına sahiptir. Ölçeklendirme adına gelecekte çok fazla konuşulacak bir proje (boyut sadece 22kb). Bu Test işlemlerinin herhangi bir getirisi yok sadece eğitim amaçlı öğrenmek isteyenler için anlatıyorum ilerleyen zamanlarda ödüllü testneti gelecek, yayınlanınca sizlerle paylaşacağız. [Mina Docs](https://docs.minaprotocol.com/zkapps/how-to-write-a-zkapp)
 
-## Video [Linki](https://youtu.be/jf5dvWblYek) 
+## Video [Linki](https://youtu.be/62I0tvTnEfQ) 
 
 ## Sunucuyu nerden nasıl alacağınızı bilmiyorsanız node eğitim serimizi izleyebilirsiniz. [Node Eğitim Serisi](https://www.youtube.com/playlist?list=PLKxGUfdcj7MVXls2OvTpwx6CnpVJN685w) veya bir önce kurduğumuz manta suncunuzu sıfırlayarak kurabilirsiniz işlemler tamamlandıktan sonra sunucuyu isterseniz tamamen silebilirsiniz. 
  
@@ -105,9 +105,9 @@ npm run start
 zk config
 ```
 # 
--Chose a name: berkeley 
--Apı url: https://proxy.berkeley.minaexplorer.com/graphql
--Transaction fee: 0.1
+ - Chose a name: berkeley 
+ - Apı url: https://proxy.berkeley.minaexplorer.com/graphql
+ - Transaction fee: 0.1
 
 Çıktıda verilen linki alıp tarayıcımıza yapıştırıyoruz daha sonra Request diyip test tokenleri alıyoruz. yeni bloğun oluşmasını bekliyoruz videodan görebilirsiniz.
 
