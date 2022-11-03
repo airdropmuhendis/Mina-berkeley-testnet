@@ -16,7 +16,7 @@
  - Git 2+
  - disk boyutu önemsiz
 
- # kurulum için 2 tane seçeneğimiz bulunuyor isterseniz kendi örneğinizi oluşturabilirsiniz örnek kurulum üzerinden devam edeceğim. [Burdan](https://docs.minaprotocol.com/zkapps/how-to-write-a-zkapp) diğer detaylarıda kontrol edebilirsiniz.
+ # Kurulum için 2 tane seçeneğimiz bulunuyor isterseniz kendi örneğinizi oluşturabilirsiniz, örnek kurulum üzerinden devam edeceğim. [Burdan](https://docs.minaprotocol.com/zkapps/how-to-write-a-zkapp) option B veya diğer detaylarıda kontrol edebilirsiniz.
 
 <h1 align="center">Örnek Kurulum
 
@@ -79,6 +79,14 @@ npm -v
  ```
 zk example sudoku
 ```
+# eğer init hatası verirse yani giriş isterse alttaki komutları kendinize göre düzenleyip devam edin Email adresinizi ve isim yazın.
+
+```
+git config --global user.email (mail adresiniz)
+```
+```
+git config --global user.name (kullanıcı ismi)
+```
 ```
 cd sudoku
 ```
@@ -86,7 +94,7 @@ cd sudoku
 npm run test
 ```
 ```
- npm run build
+npm run build
 ```
 ```
 npm run start
@@ -109,6 +117,8 @@ zk config
 zk deploy berkeley
  
   ```
+işlemler bukadar videodaki gibi çıktı aldıysanız sorun yok berkeley test ağına bir işlem göndermiş olduk.
 
+Mina [Discord](https://discord.gg/minaprotocol)
  
 
